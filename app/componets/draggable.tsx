@@ -8,7 +8,8 @@ export default function App( {onClose}: {onClose: () => void}) {
 
   return (
     <Draggable nodeRef={nodeRef}>
-      <div className="border" ref={nodeRef}>
+      <div className="absolute border min-h-60 min-w-60" 
+      ref={nodeRef}>
         <button onClick={onClose}>Close</button>
         Drag me!
         </div>

@@ -11,13 +11,13 @@ export default function Home() {
 
   return (
     <div className="w-full h-full">
-      {isVisible && (<App  onClose={() => setIsVisible(false)}></App>)}
       <div className="basis-1/4 border"> 
         <button 
         onClick={() => {setIsVisible(true)}}
         className="bg-blue-500 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 ...">
           Save Changes
         </button>
+        {isVisible && (<App  onClose={() => setIsVisible(false)}></App>)}
       </div>
           <div className="basis-2/4 border">
               <div className="border min-h-120">
@@ -35,6 +35,8 @@ export default function Home() {
               </div>
           </div>
         <div className="basis-1/4 border">page 03</div>
+        
     </div>
+    
   );
 }
