@@ -1,8 +1,9 @@
 "use client"
 import { useState } from 'react';
 import DraggableWindow from './DraggableWindow';
+import ProjectTable from '../pages/project-table';
+import AboutMePage from '../pages/about-me';
 
-import HomePage from '../pages/home-page';
 
 interface Window {
   id: string;
@@ -34,21 +35,16 @@ export default function WindowManager() {
 
   return (
     <div className="">
-      <div className="p-4">
+      <div className="p-4 flex items-center gap-2">
         <button 
-          onClick={() => addWindow('/HomePage', <HomePage/>)}
-          className="px-4 py-2 text-white border rounded">
-          home
+          onClick={() => addWindow('/ProjectTable', <ProjectTable/>)}
+          className="px-4 py-2 bg-foreground-02 border rounded">
+          My Projects
         </button>
         <button 
-          onClick={() => addWindow('/ProjectTable', <div>words</div>)}
-          className="px-4 py-2 text-white border rounded">
-          table
-        </button>
-        <button 
-          onClick={() => addWindow('/other', <div>stuff</div>)}
-          className="px-4 py-2 text-white border rounded">
-          ect
+          onClick={() => addWindow('/other', <AboutMePage/>)}
+          className="px-4 py-2 bg-foreground-02 border rounded">
+          About Me
         </button>
       </div>
 

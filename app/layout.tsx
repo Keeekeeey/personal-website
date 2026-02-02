@@ -27,13 +27,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className="flex items-center justify-center min-h-screen">
-          <div className="basis-20 border">01</div>
-          <div className="basis-lg border">
-            <div className="flex border min-h-120 min-w-120">
+          <div className="basis-1/4 "></div>
+          <div className="basis-2/4">
+            <div className="flex border-2 min-h-120 min-w-120 ">
               {children}
               </div>
           </div>
-          <div className="basis-20 border">03</div>
+          <div className="basis-1/4"></div>
         </div>
 
     </body>
