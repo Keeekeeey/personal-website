@@ -24,10 +24,11 @@ export default function DraggableWindow({
       defaultPosition={defaultPosition}
       handle=".drag-handle">
       <div 
-        className="absolute min-h-60 min-w-60 bg-foreground-01 rounded border-2" 
+        className="absolute min-h-60 min-w-60 bg-window-background rounded border-2" 
         ref={nodeRef}>
         <div 
-          className="drag-handle grid bg-foreground-02 gap-4 p-2 cursor-move" 
+          className="drag-handle grid 
+          bg-linear-180 from-window-header-light to-window-header-dark gap-4 p-2 cursor-move" 
           style={{ gridTemplateColumns: '2fr 1fr' }}> 
           <div className="border rounded-2xl bg-background min-h-5 px-5 flex items-center"> 
             <span className="text-sm">{title}</span>
