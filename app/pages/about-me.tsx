@@ -3,8 +3,8 @@ import SkillsTable from "./about-me-skills-table";
 export default function AboutMePage (){
 
     return(
-        <div>
-            <div className="flex flex-row border-2 rounded p-2">
+        <div className="w-full h-full max-h-160 max-w-160">
+            <div className="flex flex-row border-2 rounded p-2 ">
                 <div className="">
                 <header className="font-bold">My name is Kira Smith and I'm a developer seeking entry-level oppurtunites in software enginnering.</header>
                 <div className="float-left mr-4 mb-4 w-32 h-32 min-h-30 min-w-30 rounded">
@@ -41,17 +41,17 @@ export default function AboutMePage (){
                     <div className="flex flex-row p-2">
                     <div className="basis-1/4"></div>
                     <div className="basis-2/4 flex justify-center items-center gap-2">
-                        <button className="bg-accent rounded p-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-accent">
+                        <button className="bg-window-header-light rounded p-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-accent">
                             <img 
                             alt ='Apple Icon'
                             className="max-h-10 max-w-10 min-h-10 min-w-10" src="https://cdn-icons-png.flaticon.com/128/0/747.png"></img>
                         </button>
-                        <button className="bg-accent rounded p-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-accent">
+                        <button className="bg-window-header-light rounded p-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-accent">
                             <img 
                             alt ='Venture out Icon'
                             className="max-h-10 max-w-10" src='https://media.licdn.com/dms/image/v2/D4E0BAQEFsaef3WUVvg/company-logo_100_100/company-logo_100_100/0/1704902921627/ventr_out_logo?e=1771459200&v=beta&t=nQpoGMB_Uigs492n_VA3uOGlhAPvuuM67gjQop0iiwM'></img>
                         </button>
-                        <button className="bg-accent rounded p-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-accent">
+                        <button className="bg-window-header-light rounded p-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-accent">
                             <img 
                             alt ='Venture out Icon'
                             className="max-h-10 max-w-10 min-h-10 min-w-10" src='https://s3.amazonaws.com/cdn.kg.io/logos/logo-small.png'></img>

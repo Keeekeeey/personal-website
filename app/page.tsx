@@ -5,7 +5,11 @@ import { useState, useRef } from "react";
 import TimerWidget from "./componets/Timer";
 import WindowManager from "./componets/WindowManager";
 
+import DraggableWindow from "./componets/DraggableWindow";
+
 export default function landingPage() {
+
+  
 
 return (
     <div className="border rounded w-full h-full ">
@@ -16,7 +20,7 @@ return (
           <TimerWidget/>
         </div>
       </div>
-      <div className="bg-cover h-96 min-w-20 min-h-150 bg-[url(https://images.pexels.com/photos/34314175/pexels-photo-34314175.jpeg)]">
+      <div className="bg-cover min-w-20 min-h-150 bg-[url(https://images.pexels.com/photos/34314175/pexels-photo-34314175.jpeg)]">
         <WindowManager/>
       </div>
       <div className="border p-4 flex y-0 w-full h-full
