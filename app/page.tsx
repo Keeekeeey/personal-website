@@ -1,17 +1,15 @@
-"use client"
 
-import { useState, useRef } from "react";
-
+import React from "react";
 import TimerWidget from "./componets/Timer";
 import WindowManager from "./componets/WindowManager";
 
-import DraggableWindow from "./componets/DraggableWindow";
+import background from "./images/portfolio_background_lowres.jpg"
+
 
 export default function landingPage() {
 
-  
-
 return (
+
     <div className="border rounded w-full h-full flex flex-col">
       <div className="border">
         <div className=" p-4 flex x-0 w-full
@@ -22,7 +20,10 @@ return (
                 </div>
               </div>
       </div>
-      <div className="border h-full bg-cover bg-[url(https://images.pexels.com/photos/34314175/pexels-photo-34314175.jpeg)]">
+      <div 
+      style={{ '--bg-image': `url(${background.src})` } as React.CSSProperties}
+      className="bg-[image:var(--bg-image)] bg-cover bg-center h-screen"
+    >
         <WindowManager/>
       </div>
       <div className="border bottom-0">
