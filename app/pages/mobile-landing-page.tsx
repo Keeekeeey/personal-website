@@ -24,10 +24,8 @@ export default function MobileLandingPage(){
                 sticky bg-linear-180 from-window-header-light to-window-header-dark px-2">
                     <div className="pt-2">
                         <button
-                        className="border rounded p-2
-                        hover:cursor-pointer bg-window-header-light transition delay-150 
-                        duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 
-                        hover:bg-window-header-light"
+                        className="rounded p-2
+                        bg-window-header-light "
                         onClick={() =>{
                             sethomePageToggle(true)
                             setabouteMeToggle(false)
@@ -36,10 +34,8 @@ export default function MobileLandingPage(){
                             Home Page
                         </button>
                         <button
-                        className="border rounded p-2
-                        hover:cursor-pointer bg-window-header-light transition delay-150 
-                        duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 
-                        hover:bg-window-header-light"
+                        className=" rounded p-2
+                        bg-window-header-light "
                         onClick={() =>{
                             sethomePageToggle(false)
                             setabouteMeToggle(true)
@@ -48,10 +44,8 @@ export default function MobileLandingPage(){
                             About Me
                         </button>
                         <button
-                        className="border rounded p-2
-                        hover:cursor-pointer bg-window-header-light transition delay-150 
-                        duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 
-                        hover:bg-window-header-light"
+                        className=" rounded p-2
+                        bg-window-header-light "
                         onClick={() =>{
                             sethomePageToggle(false)
                             setabouteMeToggle(false)
@@ -59,13 +53,7 @@ export default function MobileLandingPage(){
                         }}>
                             My Projects
                         </button>
-                        <button
-                        className="border rounded p-2
-                        hover:cursor-pointer bg-window-header-light transition delay-150 
-                        duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 
-                        hover:bg-window-header-light">
-                            My Resume
-                        </button>
+                        
                         <a href="https://docs.google.com/document/d/15v0Xzpo4t8l4ANTc3FjpkujUPwb9Fymqho-_yMLDHHM/edit?usp=sharing">
                             <button
                             className='p-3'>

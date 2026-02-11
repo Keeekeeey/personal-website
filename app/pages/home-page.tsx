@@ -9,8 +9,8 @@ return (
     <div className="">
           <div className="basis-2/4 rounded p-2 bg-window-background ">
               <div className="p-1 ">
-                 <p className="border font-bold bg-window-foreground p-2 lg:text-lg md:text-md">If you're looking for a problem solver, look no further!</p>
-                  <div className="border">
+                 <p className="md:border font-bold bg-window-foreground p-2 lg:text-lg md:text-md">If you're looking for a problem solver, look no further!</p>
+                  <div className="md:border">
                     <div className="p-2">
                       <div className=" flex float-left mr-4 mb-4 max-h-90 max-w-90 border-4 rounded">
                           <img
@@ -29,13 +29,20 @@ return (
                       <div className="flex h-auto">
                        <SkillsTable/>
                       </div>
+                      <div className="flex md:hidden justify-center pb-2 ">
+                        <div className="font-bold  p-4 text-center bg-window-foreground">
+                          <a href="https://docs.google.com/document/d/15v0Xzpo4t8l4ANTc3FjpkujUPwb9Fymqho-_yMLDHHM/edit?usp=sharing">
+                            My Resume - TEMP LINK
+                          </a>
+                        </div>
+                    </div>
                     
                   </div>
                   <div className="flex justify-center items-center gap-2">
                   </div>
                   <div className="min-h-10 bg-[url(https://i.pinimg.com/736x/49/22/b7/4922b7524905b3e25d32a8aa50133280.jpg)]">
                   </div>
-                  <div className="flex flex-row border bg-window-foreground min-h-5 p-5 md:px-10">
+                  <div className="flex flex-row md:border bg-window-foreground min-h-5 p-5 md:px-10">
                     <div className="basis-2/4 ">
                     <p className="font-bold lg:text-lg md:text-md">Sound like a fit? </p>
                     <p> Contact me at:</p>

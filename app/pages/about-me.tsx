@@ -6,7 +6,7 @@ export default function AboutMePage (){
         <div className="p-4 overflow-auto">
             <div className="flex flex-row md:border-2 rounded p-2 ">
                 <div className="">
-                <header className="font-bold lg:text-lg md:text-md ">My name is Kira Smith and I'm a developer seeking entry-level opportunities
+                <header className="font-bold lg:text-lg md:text-md bg-window-foreground p-2 ">My name is Kira Smith and I'm a developer seeking entry-level opportunities
                     in software engineering.</header>
                 <div className="float-left mr-4 mb-4 min-h-60 min-w-60 max-h-100 max-w-100 rounded">
                     <img src='https://i.pinimg.com/736x/2d/1b/7a/2d1b7a9ec2057f97fe7107b210cb2615.jpg'></img>
