@@ -6,6 +6,7 @@ import AboutMePage from '../pages/about-me';
 import HomePage from '../pages/home-page';
 
 
+
 interface Window {
   id: string;
   title: string;
@@ -35,7 +36,7 @@ export default function WindowManager() {
   };
 
   return (
-    <div className="max-w-40 max-h-full ">
+    <div className="">
       <div className="p-4 flex flex-col gap-2 text-black font-bold ">
         <button 
           onClick={() => addWindow('/ProjectTable', <ProjectTable/>)}
@@ -62,17 +63,18 @@ export default function WindowManager() {
             </button>
         </a>
       </div>
-
-      {windows.map((window) => (
-        <DraggableWindow
-          key={window.id}
-          id={window.id}
-          title={window.title}
-          onClose={() => closeWindow(window.id)}
-          defaultPosition={window.position}>
-          {window.content}
-        </DraggableWindow>
-      ))}
+        <div className='absolute'>
+        {windows.map((window) => (
+          <DraggableWindow
+            key={window.id}
+            id={window.id}
+            title={window.title}
+            onClose={() => closeWindow(window.id)}
+            defaultPosition={window.position}>
+            {window.content}
+          </DraggableWindow>
+        ))}
+        </div>
     </div>
   );
 }
