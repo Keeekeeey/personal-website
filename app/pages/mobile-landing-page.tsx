@@ -24,8 +24,7 @@ export default function MobileLandingPage(){
                 sticky bg-linear-180 from-window-header-light to-window-header-dark px-2">
                     <div className="pt-2">
                         <button
-                        className="rounded p-2
-                        bg-window-header-light "
+                        className={`rounded p-2 ${homePageToggle ? 'bg-window-background' : 'bg-window-foreground'}`}
                         onClick={() =>{
                             sethomePageToggle(true)
                             setabouteMeToggle(false)
@@ -34,8 +33,7 @@ export default function MobileLandingPage(){
                             Home Page
                         </button>
                         <button
-                        className=" rounded p-2
-                        bg-window-header-light "
+                        className={`rounded p-2 ${abouteMeToggle ? 'bg-window-background' : 'bg-window-foreground'}`}
                         onClick={() =>{
                             sethomePageToggle(false)
                             setabouteMeToggle(true)
@@ -44,8 +42,7 @@ export default function MobileLandingPage(){
                             About Me
                         </button>
                         <button
-                        className=" rounded p-2
-                        bg-window-header-light "
+                        className={`rounded p-2 ${projectToggle ? 'bg-window-background' : 'bg-window-foreground'}`}
                         onClick={() =>{
                             sethomePageToggle(false)
                             setabouteMeToggle(false)
