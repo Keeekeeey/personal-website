@@ -4,7 +4,7 @@ export default function AboutMePage (){
 
     return(
         <div className="p-4 overflow-auto">
-            <div className="flex flex-row border-2 rounded p-2 ">
+            <div className="flex flex-row md:border-2 rounded p-2 ">
                 <div className="">
                 <header className="font-bold lg:text-lg md:text-md ">My name is Kira Smith and I'm a developer seeking entry-level opportunities
                     in software engineering.</header>
@@ -32,7 +32,7 @@ export default function AboutMePage (){
                 
             </div>
             <div className="p-2 min-h-10 bg-[url(https://i.pinimg.com/736x/49/22/b7/4922b7524905b3e25d32a8aa50133280.jpg)]"></div>
-            <div className="flex flex-row border-2">
+            <div className="flex flex-row md:border-2">
                 <div className="basis-2/3 bg-window-foreground">
                         <SkillsTable/>
                 </div>
@@ -40,26 +40,26 @@ export default function AboutMePage (){
                     <div className="font-bold p-3 text-center">Companies I've worked for</div>
                     <div className="flex flex-row p-2 border-b">
                     <div className="basis-1/4"></div>
-                    <div className="basis-2/4 flex flex-row justify-center items-center text-center gap-2">
+                    <div className="basis-2/4 flex flex-col md:flex-row justify-center items-center text-center gap-2">
                     <a href='https://www.linkedin.com/company/apple/posts/?feedView=all'>
                         <button className="hover:cursor-pointer bg-window-header-light rounded p-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-accent">
                             <img 
                             alt ='Apple Icon'
-                            className="max-h-10 max-w-10 min-h-10 min-w-10" src="https://cdn-icons-png.flaticon.com/128/0/747.png"></img>
+                            className="size-10" src="https://cdn-icons-png.flaticon.com/128/0/747.png"></img>
                         </button>
                         </a>
                         <a href='https://www.linkedin.com/company/ventr-out/'>
                         <button className="hover:cursor-pointer bg-window-header-light rounded p-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-accent">
                             <img 
                             alt ='VentR-out Icon'
-                            className="max-h-10 max-w-10" src='https://media.licdn.com/dms/image/v2/D4E0BAQEFsaef3WUVvg/company-logo_100_100/company-logo_100_100/0/1704902921627/ventr_out_logo?e=1771459200&v=beta&t=nQpoGMB_Uigs492n_VA3uOGlhAPvuuM67gjQop0iiwM'></img>
+                            className="size-10" src='https://media.licdn.com/dms/image/v2/D4E0BAQEFsaef3WUVvg/company-logo_100_100/company-logo_100_100/0/1704902921627/ventr_out_logo?e=1771459200&v=beta&t=nQpoGMB_Uigs492n_VA3uOGlhAPvuuM67gjQop0iiwM'></img>
                         </button>
                         </a>
                         <a href='https://www.linkedin.com/company/koin-games/posts/?feedView=all'>
                         <button className="hover:cursor-pointer bg-window-header-light rounded p-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-accent">
                             <img
                             alt ='Koin Icon'
-                            className="max-h-10 max-w-10 min-h-10 min-w-10" src='https://s3.amazonaws.com/cdn.kg.io/logos/logo-small.png'></img>
+                            className="size-10" src='https://s3.amazonaws.com/cdn.kg.io/logos/logo-small.png'></img>
                         </button>
                         </a>
                        
