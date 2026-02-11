@@ -36,8 +36,8 @@ export default function WindowManager() {
   };
 
   return (
-    <div className="">
-      <div className="p-4 flex flex-col gap-2 text-black font-bold ">
+    <div className="border items-start flex">
+      <div className="p-4 flex-col gap-2 text-black font-bold ">
         <button 
           onClick={() => addWindow('/ProjectTable', <ProjectTable/>)}
           className=" hover:cursor-pointer px-4 py-2 flex flex-col items-center">
@@ -63,7 +63,7 @@ export default function WindowManager() {
             </button>
         </a>
       </div>
-        <div className='absolute'>
+
         {windows.map((window) => (
           <DraggableWindow
             key={window.id}
@@ -74,7 +74,7 @@ export default function WindowManager() {
             {window.content}
           </DraggableWindow>
         ))}
-        </div>
+
     </div>
   );
 }
