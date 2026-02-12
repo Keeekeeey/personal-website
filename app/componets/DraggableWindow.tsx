@@ -24,7 +24,7 @@ export default function DraggableWindow({
       defaultPosition={defaultPosition}
       handle=".drag-handle">
       <div 
-        className="absolute min-h-60 min-w-60 bg-window-background rounded border-2" 
+        className=" absolute bg-window-background rounded border-2" 
         ref={nodeRef}>
         <div 
           className="drag-handle grid 
