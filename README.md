@@ -12,8 +12,8 @@ Deployed via Github Actions, current build is based off Main and updates automat
 
 ## To run locally
 ```
-git clone https://github.com/yourname/personal-site
-cd personal-site
+git clone https://github.com/Keeekeeey/keeekeeey.github.io
+cd keeekeeey.github.io
 npm install
 npm run dev
 ```
